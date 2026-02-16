@@ -64,7 +64,7 @@ function App() {
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>Narasapur, West Godavari</li>
                 <li>Andhra Pradesh 534275</li>
-                <li>+91 8856 234567</li>
+                <li>+91 8074426242</li>
                 <li>info@narasapurlace.com</li>
               </ul>
             </div>

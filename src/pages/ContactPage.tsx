@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { MapPin, Phone, Mail, Clock, Send, Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Send, Facebook, Instagram, Twitter, Linkedin, Youtube } from 'lucide-react';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -54,14 +54,14 @@ export default function ContactPage() {
             <h3 className="text-xl font-bold text-gray-900 mb-3">Call Us</h3>
             <p className="text-gray-700 leading-relaxed">
               <span className="block mb-2">
-                <strong>Phone:</strong> +91 8856 234567
+                <strong>Phone:</strong> +91 8074426242
               </span>
-              <span className="block mb-2">
+              {/* <span className="block mb-2">
                 <strong>WhatsApp:</strong> +91 8856 234567
               </span>
               <span className="block">
                 <strong>Toll Free:</strong> 1800 123 4567
-              </span>
+              </span> */}
             </p>
           </div>
 
@@ -75,14 +75,14 @@ export default function ContactPage() {
                 <strong>General:</strong><br />
                 info@narasapurlace.com
               </span>
-              <span className="block mb-2">
+              {/* <span className="block mb-2">
                 <strong>Orders:</strong><br />
                 orders@narasapurlace.com
               </span>
               <span className="block">
                 <strong>Wholesale:</strong><br />
                 wholesale@narasapurlace.com
-              </span>
+              </span> */}
             </p>
           </div>
         </div>
@@ -263,7 +263,7 @@ export default function ContactPage() {
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/profile.php?id=61582141463792"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center space-x-2 bg-blue-600 text-white px-4 py-3 rounded-lg hover:bg-blue-700 transition-colors"
@@ -272,7 +272,7 @@ export default function ContactPage() {
                   <span className="font-semibold">Facebook</span>
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/corchetlace"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center space-x-2 bg-pink-600 text-white px-4 py-3 rounded-lg hover:bg-pink-700 transition-colors"
@@ -281,16 +281,16 @@ export default function ContactPage() {
                   <span className="font-semibold">Instagram</span>
                 </a>
                 <a
-                  href="https://twitter.com"
+                  href="https://www.youtube.com/@CorchetLace"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center space-x-2 bg-sky-500 text-white px-4 py-3 rounded-lg hover:bg-sky-600 transition-colors"
                 >
-                  <Twitter className="w-5 h-5" />
-                  <span className="font-semibold">Twitter</span>
+                  <Youtube className="w-5 h-5" />
+                  <span className="font-semibold">YouTube</span>
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/company/narasapurlace/?viewAsMember=true"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center space-x-2 bg-blue-700 text-white px-4 py-3 rounded-lg hover:bg-blue-800 transition-colors"
