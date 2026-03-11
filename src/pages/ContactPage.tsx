@@ -272,7 +272,7 @@ export default function ContactPage() {
                   <span className="font-semibold">Facebook</span>
                 </a>
                 <a
-                  href="https://www.instagram.com/corchetlace"
+                  href="https://www.instagram.com/andhra_hasthkala/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center space-x-2 bg-pink-600 text-white px-4 py-3 rounded-lg hover:bg-pink-700 transition-colors"
