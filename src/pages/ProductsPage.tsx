@@ -1,5 +1,13 @@
 import { useState } from 'react';
 import { Search, Filter, Heart, MessageCircle } from 'lucide-react';
+import img_1 from '../assets/img_1.png';
+import img_2 from '../assets/img_2.png';
+import img_3 from '../assets/img_3.png';
+import img_4 from '../assets/img_4.png';
+import img_5 from '../assets/img_5.png';
+import img_6 from '../assets/img_6.png';
+
+
 
 interface Showcase {
   id: number;
@@ -30,91 +38,91 @@ export default function ProductsPage({ onNavigateToContact }: ProductsPageProps)
       name: 'Classic Table Runner',
       category: 'home-decor',
       description: 'Elegant handcrafted lace table runner featuring traditional floral patterns. Perfect for dining tables and special occasions.',
-      image: 'table-runner'
+      image: img_1
     },
     {
       id: 2,
       name: 'Decorative Doilies Set',
       category: 'home-decor',
       description: 'Set of intricate crochet doilies in various sizes. Ideal for tea tables, side tables, and decorative displays.',
-      image: 'doilies'
+      image: img_2
     },
     {
       id: 3,
       name: 'Lace Curtain Panels',
       category: 'home-decor',
       description: 'Delicate lace curtain panels that add vintage charm to any window. Available in various sizes and patterns.',
-      image: 'curtains'
+      image: img_3
     },
     {
       id: 4,
       name: 'Decorative Cushion Covers',
       category: 'home-decor',
       description: 'Luxurious cushion covers with intricate lace details. Each piece showcases unique traditional designs.',
-      image: 'cushions'
+      image: img_4
     },
     {
       id: 5,
       name: 'Lace Shawl',
       category: 'fashion',
       description: 'Lightweight and elegant lace shawl perfect for special occasions. Delicate patterns showcase masterful craftsmanship.',
-      image: 'shawl'
+      image: img_5
     },
     {
       id: 6,
       name: 'Bridal Veil',
       category: 'fashion',
       description: 'Exquisite handcrafted bridal veil with traditional motifs. A timeless piece for your special day.',
-      image: 'veil'
+      image: img_6
     },
-    {
-      id: 7,
-      name: 'Lace Collar Set',
-      category: 'fashion',
-      description: 'Detachable lace collar and cuffs set. Perfect for adding vintage elegance to traditional attire.',
-      image: 'collar'
-    },
-    {
-      id: 8,
-      name: 'Fashion Stole',
-      category: 'fashion',
-      description: 'Versatile lace stole that complements both traditional and contemporary attire. Handcrafted with precision.',
-      image: 'stole'
-    },
-    {
-      id: 9,
-      name: 'Custom Wedding Décor',
-      category: 'custom',
-      description: 'Personalized lace decorations for weddings including table settings, backdrops, and aisle runners.',
-      image: 'wedding'
-    },
-    {
-      id: 10,
-      name: 'Bespoke Table Settings',
-      category: 'custom',
-      description: 'Custom-designed placemats, napkin rings, and table runners tailored to your specifications.',
-      image: 'table-settings'
-    },
-    {
-      id: 11,
-      name: 'Personalized Gifts',
-      category: 'custom',
-      description: 'Create unique lace pieces with custom patterns, initials, or special messages for memorable gifts.',
-      image: 'gifts'
-    },
-    {
-      id: 12,
-      name: 'Corporate Event Collections',
-      category: 'custom',
-      description: 'Bespoke lace collections for corporate events, hotels, and retail establishments. Bulk orders welcome.',
-      image: 'corporate'
-    },
+    // {
+    //   id: 7,
+    //   name: 'Lace Collar Set',
+    //   category: 'fashion',
+    //   description: 'Detachable lace collar and cuffs set. Perfect for adding vintage elegance to traditional attire.',
+    //   image: 'collar'
+    // },
+    // {
+    //   id: 8,
+    //   name: 'Fashion Stole',
+    //   category: 'fashion',
+    //   description: 'Versatile lace stole that complements both traditional and contemporary attire. Handcrafted with precision.',
+    //   image: 'stole'
+    // },
+    // {
+    //   id: 9,
+    //   name: 'Custom Wedding Décor',
+    //   category: 'custom',
+    //   description: 'Personalized lace decorations for weddings including table settings, backdrops, and aisle runners.',
+    //   image: 'wedding'
+    // },
+    // {
+    //   id: 10,
+    //   name: 'Bespoke Table Settings',
+    //   category: 'custom',
+    //   description: 'Custom-designed placemats, napkin rings, and table runners tailored to your specifications.',
+    //   image: 'table-settings'
+    // },
+    // {
+    //   id: 11,
+    //   name: 'Personalized Gifts',
+    //   category: 'custom',
+    //   description: 'Create unique lace pieces with custom patterns, initials, or special messages for memorable gifts.',
+    //   image: 'gifts'
+    // },
+    // {
+    //   id: 12,
+    //   name: 'Corporate Event Collections',
+    //   category: 'custom',
+    //   description: 'Bespoke lace collections for corporate events, hotels, and retail establishments. Bulk orders welcome.',
+    //   image: 'corporate'
+    // },
   ];
 
   const filteredShowcases = showcases.filter(showcase => {
     const matchesCategory = selectedCategory === 'all' || showcase.category === selectedCategory;
     const matchesSearch = showcase.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                         showcase.description.toLowerCase().includes(searchQuery.toLowerCase());
+      showcase.description.toLowerCase().includes(searchQuery.toLowerCase());
     return matchesCategory && matchesSearch;
   });
 
@@ -165,11 +173,22 @@ export default function ProductsPage({ onNavigateToContact }: ProductsPageProps)
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredShowcases.map(showcase => (
             <div key={showcase.id} className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-2xl">
-              <div className="relative h-64 bg-gradient-to-br from-amber-100 to-amber-200 flex items-center justify-center">
+              {/* <div className="relative h-64 bg-gradient-to-br from-amber-100 to-amber-200 flex items-center justify-center">
                 <div className="text-center p-6">
                   <div className="text-6xl mb-2">🧶</div>
                   <p className="text-sm text-amber-800 font-medium">{showcase.name}</p>
                 </div>
+                <button className="absolute top-4 right-4 bg-white p-2 rounded-full shadow-md hover:bg-amber-50 transition-colors">
+                  <Heart className="w-5 h-5 text-gray-600" />
+                </button>
+              </div> */}
+              <div className="relative h-64 overflow-hidden">
+                <img
+                  src={showcase.image}
+                  alt={showcase.name}
+                  className="w-full h-full object-cover"
+                />
+
                 <button className="absolute top-4 right-4 bg-white p-2 rounded-full shadow-md hover:bg-amber-50 transition-colors">
                   <Heart className="w-5 h-5 text-gray-600" />
                 </button>

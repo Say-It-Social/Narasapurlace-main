@@ -20,21 +20,21 @@ export default function StoryPage({ onNavigateToContact }: StoryPageProps) {
             <h2 className="text-4xl font-bold text-gray-900 mb-6">A Legacy Spanning Generations</h2>
             <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
-                Narasapur Lace is more than just handcrafted textiles—it's a living testament to centuries of artisanal tradition and cultural heritage. Our story begins in the late 19th century when Scottish missionaries introduced crochet techniques to the coastal town of Narasapur in Andhra Pradesh, India.
+                Traditional handmade crochet lace is a timeless textile craft known for its intricate patterns, delicate craftsmanship, and rich cultural heritage. Created by skilled artisans using generations-old techniques, handmade lace reflects the beauty of traditional artistry combined with detailed handwork and elegant design.
               </p>
               <p>
-                What started as a simple craft quickly flourished into a thriving industry that would define the economic and cultural identity of Narasapur. Over 150 years later, this legacy continues with thousands of talented artisans keeping the tradition alive, passing their skills from generation to generation like a precious family heirloom.
+                Over the years, crochet lace craftsmanship has grown into a globally admired heritage craft, valued for its premium quality, unique textures, and artistic appeal. Each handmade lace piece represents dedication, creativity, and the preservation of authentic artisan traditions passed down through generations.
               </p>
               <p>
-                Today, we remain committed to preserving this invaluable heritage while ensuring that the artisans who make our products are fairly compensated and properly recognized for their extraordinary craftsmanship.
+                Today, traditional crochet lace continues to be popular in home décor, fashion, table linen, and handmade textile collections, while also supporting artisan communities and preserving the legacy of handcrafted textile art.
               </p>
             </div>
           </div>
           <div className="bg-gradient-to-br from-amber-100 to-amber-200 rounded-2xl h-96 flex items-center justify-center shadow-xl">
-            <div className="text-center p-8">
+            {/* <div className="text-center p-8">
               <Sparkles className="w-24 h-24 text-amber-700 mx-auto mb-4" />
               <p className="text-amber-900 font-semibold text-lg">150+ Years of Excellence</p>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -42,22 +42,22 @@ export default function StoryPage({ onNavigateToContact }: StoryPageProps) {
           <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">How It All Started</h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white rounded-lg p-6 shadow-md">
-              <div className="text-4xl font-bold text-amber-600 mb-3">1870s</div>
+              {/* <div className="text-4xl font-bold text-amber-600 mb-3">1870s</div> */}
               <h4 className="font-semibold text-gray-900 mb-2">Introduction</h4>
               <p className="text-sm text-gray-600">Scottish missionaries introduce crochet techniques to Narasapur's local communities</p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-md">
-              <div className="text-4xl font-bold text-amber-600 mb-3">Early 1900s</div>
+              {/* <div className="text-4xl font-bold text-amber-600 mb-3">Early 1900s</div> */}
               <h4 className="font-semibold text-gray-900 mb-2">Growth</h4>
               <p className="text-sm text-gray-600">The craft spreads rapidly through villages, becoming a primary income source</p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-md">
-              <div className="text-4xl font-bold text-amber-600 mb-3">1950s-80s</div>
+              {/* <div className="text-4xl font-bold text-amber-600 mb-3">1950s-80s</div> */} 
               <h4 className="font-semibold text-gray-900 mb-2">Expansion</h4>
               <p className="text-sm text-gray-600">Narasapur earns the title "Lace Town of India" with international recognition</p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-md">
-              <div className="text-4xl font-bold text-amber-600 mb-3">Today</div>
+              {/* <div className="text-4xl font-bold text-amber-600 mb-3">Today</div>  */}
               <h4 className="font-semibold text-gray-900 mb-2">Legacy</h4>
               <p className="text-sm text-gray-600">5,000+ artisans continue preserving tradition while embracing sustainable practices</p>
             </div>
@@ -66,22 +66,22 @@ export default function StoryPage({ onNavigateToContact }: StoryPageProps) {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           <div className="bg-gradient-to-br from-amber-100 to-amber-200 rounded-2xl h-96 flex items-center justify-center shadow-xl order-2 lg:order-1">
-            <div className="text-center p-8">
+            {/* <div className="text-center p-8">
               <Users className="w-24 h-24 text-amber-700 mx-auto mb-4" />
               <p className="text-amber-900 font-semibold text-lg">5,000+ Women Artisans</p>
-            </div>
+            </div> */}
           </div>
           <div className="order-1 lg:order-2">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Empowering Artisans, Preserving Tradition</h2>
             <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
-                At the heart of our mission are the extraordinary women artisans of Narasapur. These talented craftspeople dedicate hours to perfecting their craft, creating pieces that are recognized worldwide for their exceptional quality and intricate beauty.
+                At the heart of traditional handmade crochet lace craftsmanship are skilled artisans whose creativity, patience, and dedication bring every design to life. These talented craftspeople spend countless hours creating intricate handmade lace products admired for their fine detailing, elegant patterns, and exceptional quality.
               </p>
               <p>
-                Many learned the craft from their mothers and grandmothers, keeping this beautiful tradition alive across generations. Working from their homes, they balance their passion for lace-making with family responsibilities, contributing significantly to their households' economies.
+                Passed down through generations, the art of crochet lace continues to preserve valuable traditional skills and cultural heritage. Many artisans work from their homes, balancing their craft with daily responsibilities while contributing to sustainable livelihoods and supporting local artisan communities.
               </p>
               <p>
-                We believe in fair trade practices that ensure every artisan receives proper recognition and fair compensation. Our commitment goes beyond just purchasing their work—we invest in their communities, supporting education, skill development, and sustainable livelihoods for the next generation.
+                We are committed to promoting ethical craftsmanship, fair trade values, and the preservation of handmade textile traditions. By supporting handmade crochet lace, you help celebrate authentic artisan work, encourage sustainable craftsmanship, and preserve a timeless heritage of handcrafted textile artistry for future generations.
               </p>
               <p>
                 When you choose Narasapur lace, you're not just purchasing a beautiful handcrafted piece. You're investing in the futures of these remarkable women and their families.
@@ -163,10 +163,10 @@ export default function StoryPage({ onNavigateToContact }: StoryPageProps) {
             </div>
           </div>
           <div className="bg-gradient-to-br from-amber-100 to-amber-200 rounded-2xl h-96 flex items-center justify-center shadow-xl">
-            <div className="text-center p-8">
+            {/* <div className="text-center p-8">
               <Sparkles className="w-24 h-24 text-amber-700 mx-auto mb-4" />
               <p className="text-amber-900 font-semibold text-lg">Handcrafted Excellence</p>
-            </div>
+            </div> */}
           </div>
         </div>
 

@@ -38,7 +38,7 @@ function App() {
             <div>
               <h3 className="text-xl font-bold mb-4 text-amber-400">Narasapur Lace</h3>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Preserving the heritage of traditional crochet lace artistry from Andhra Pradesh since 1870.
+                Preserving the rich heritage of traditional handmade crochet lace artistry through generations of skilled craftsmanship and timeless design.
               </p>
             </div>
             <div>

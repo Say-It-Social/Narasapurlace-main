@@ -44,21 +44,21 @@ export default function HomePage({ onNavigateToContact, onNavigateToStory }: Hom
             <h3 className="text-3xl font-bold text-gray-900 mb-6">The History of Narasapur Lace</h3>
             <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
-                Narasapur, a coastal town in the West Godavari district of Andhra Pradesh, has been the heart of India's crochet lace industry for over 150 years. This exquisite craft was introduced by Scottish missionaries in the late 19th century and was quickly embraced by the local community.
+                For generations, crochet lace craftsmanship has been an important part of traditional textile heritage, admired for its delicate handmade patterns, fine detailing, and skilled artistry.
               </p>
               <p>
-                What began as a cottage industry has flourished into a thriving tradition, with Narasapur earning the distinguished title of "Lace Town of India." The art form represents a beautiful fusion of European crochet techniques and Indian artistic sensibilities, creating pieces that are truly unique in their elegance and craftsmanship.
+                What began as a small cottage industry gradually evolved into a celebrated craft tradition, known for blending timeless techniques with artistic creativity. The intricate lacework reflects patience, precision, and the dedication of artisans who have preserved the craft through generations.
               </p>
               <p>
-                Today, Narasapur lace is celebrated worldwide for its intricate patterns, delicate texture, and superior quality. Each piece tells a story of patience, skill, and the preservation of cultural heritage passed down through generations of dedicated artisans.
+                Today, handmade crochet lace is appreciated around the world for its elegant designs, soft texture, and exceptional craftsmanship. Each piece represents a rich cultural legacy and the enduring beauty of handmade art passed down over time.
               </p>
             </div>
           </div>
           <div className="bg-gradient-to-br from-amber-100 to-amber-200 rounded-2xl h-96 flex items-center justify-center shadow-xl">
-            <div className="text-center p-8">
+            {/* <div className="text-center p-8">
               <Sparkles className="w-24 h-24 text-amber-700 mx-auto mb-4" />
               <p className="text-amber-900 font-semibold text-lg">150+ Years of Tradition</p>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -82,22 +82,22 @@ export default function HomePage({ onNavigateToContact, onNavigateToStory }: Hom
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
           <div className="bg-gradient-to-br from-amber-100 to-amber-200 rounded-2xl h-96 flex items-center justify-center shadow-xl order-2 md:order-1">
-            <div className="text-center p-8">
+            {/* <div className="text-center p-8">
               <Users className="w-24 h-24 text-amber-700 mx-auto mb-4" />
               <p className="text-amber-900 font-semibold text-lg">5,000+ Women Artisans</p>
-            </div>
+            </div> */}
           </div>
           <div className="order-1 md:order-2">
             <h3 className="text-3xl font-bold text-gray-900 mb-6">Empowering Women Artisans</h3>
             <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
-                At the heart of Narasapur's lace industry are the skilled women artisans who breathe life into every creation. These talented craftswomen have mastered the art of crochet, often learning the skill from their mothers and grandmothers, keeping the tradition alive across generations.
+               At the heart of every handmade lace creation are skilled artisans whose dedication and craftsmanship bring each design to life. Many of these artisans learn the art through generations, preserving traditional techniques while continuing to refine their skills with time and experience.
               </p>
               <p>
-                Our artisan community comprises over 5,000 women from Narasapur and surrounding villages who work from their homes, allowing them to balance their craft with family responsibilities. This cottage industry provides vital economic independence and has become a source of pride for these communities.
+                The craft is deeply connected to local communities, where artisans often work from their homes while balancing daily responsibilities. This traditional cottage industry not only supports livelihoods but also helps sustain cultural heritage and encourages economic empowerment within artisan families.
               </p>
               <p>
-                Each artisan brings her own unique touch to the work, infusing traditional patterns with personal creativity. We are committed to fair trade practices, ensuring that these skilled women receive fair wages and recognition for their extraordinary talent and dedication.
+                Each handcrafted piece reflects patience, creativity, and attention to detail, making every design unique in its own way. The continued support for handmade craftsmanship helps preserve these timeless skills while honoring the talent, hard work, and artistic spirit of the artisan community.
               </p>
             </div>
           </div>
