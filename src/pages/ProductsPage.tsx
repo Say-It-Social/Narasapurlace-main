@@ -12,8 +12,8 @@ import img_6 from '../assets/img_6.png';
 interface Showcase {
   id: number;
   name: string;
-  category: string;
-  description: string;
+  // category: string;
+  // description: string;
   image: string;
 }
 
@@ -25,54 +25,42 @@ export default function ProductsPage({ onNavigateToContact }: ProductsPageProps)
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
 
-  const categories = [
-    { id: 'all', name: 'All Creations' },
-    { id: 'home-decor', name: 'Home Décor' },
-    { id: 'fashion', name: 'Fashion & Wearables' },
-    { id: 'custom', name: 'Custom Projects' },
-  ];
+  // const categories = [
+  //   { id: 'all', name: 'All Creations' },
+  //   { id: 'home-decor', name: 'Home Décor' },
+  //   { id: 'fashion', name: 'Fashion & Wearables' },
+  //   { id: 'custom', name: 'Custom Projects' },
+  // ];
 
   const showcases: Showcase[] = [
     {
       id: 1,
-      name: 'Classic Table Runner',
-      category: 'home-decor',
-      description: 'Elegant handcrafted lace table runner featuring traditional floral patterns. Perfect for dining tables and special occasions.',
+      name: 'Corchet Lace',
       image: img_1
     },
     {
       id: 2,
-      name: 'Decorative Doilies Set',
-      category: 'home-decor',
-      description: 'Set of intricate crochet doilies in various sizes. Ideal for tea tables, side tables, and decorative displays.',
+      name: 'Corchet Lace',
       image: img_2
     },
     {
       id: 3,
-      name: 'Lace Curtain Panels',
-      category: 'home-decor',
-      description: 'Delicate lace curtain panels that add vintage charm to any window. Available in various sizes and patterns.',
+      name: 'Corchet Lace',
       image: img_3
     },
     {
       id: 4,
-      name: 'Decorative Cushion Covers',
-      category: 'home-decor',
-      description: 'Luxurious cushion covers with intricate lace details. Each piece showcases unique traditional designs.',
+      name: 'Corchet Lace',
       image: img_4
     },
     {
       id: 5,
-      name: 'Lace Shawl',
-      category: 'fashion',
-      description: 'Lightweight and elegant lace shawl perfect for special occasions. Delicate patterns showcase masterful craftsmanship.',
+      name: 'Corchet Lace',
       image: img_5
     },
     {
       id: 6,
-      name: 'Bridal Veil',
-      category: 'fashion',
-      description: 'Exquisite handcrafted bridal veil with traditional motifs. A timeless piece for your special day.',
+      name: 'Corchet Lace',
       image: img_6
     },
     // {
@@ -120,10 +108,10 @@ export default function ProductsPage({ onNavigateToContact }: ProductsPageProps)
   ];
 
   const filteredShowcases = showcases.filter(showcase => {
-    const matchesCategory = selectedCategory === 'all' || showcase.category === selectedCategory;
-    const matchesSearch = showcase.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      showcase.description.toLowerCase().includes(searchQuery.toLowerCase());
-    return matchesCategory && matchesSearch;
+    const matchesSearch =
+      showcase.name.toLowerCase().includes(searchQuery.toLowerCase());
+
+    return matchesSearch;
   });
 
   return (
@@ -156,9 +144,9 @@ export default function ProductsPage({ onNavigateToContact }: ProductsPageProps)
                 onChange={(e) => setSelectedCategory(e.target.value)}
                 className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent appearance-none bg-white"
               >
-                {categories.map(cat => (
+                {/* {categories.map(cat => (
                   <option key={cat.id} value={cat.id}>{cat.name}</option>
-                ))}
+                ))} */}
               </select>
             </div>
           </div>
@@ -195,15 +183,15 @@ export default function ProductsPage({ onNavigateToContact }: ProductsPageProps)
               </div>
 
               <div className="p-6">
-                <div className="mb-2">
+                {/* <div className="mb-2">
                   <span className="text-xs font-semibold text-amber-600 uppercase tracking-wide">
                     {categories.find(c => c.id === showcase.category)?.name}
                   </span>
-                </div>
+                </div> */}
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{showcase.name}</h3>
-                <p className="text-gray-600 mb-6 text-sm leading-relaxed">
+                {/* <p className="text-gray-600 mb-6 text-sm leading-relaxed">
                   {showcase.description}
-                </p>
+                </p> */}
 
                 <button onClick={onNavigateToContact} className="w-full bg-amber-600 text-white px-4 py-3 rounded-lg hover:bg-amber-700 transition-colors flex items-center justify-center space-x-2 font-semibold">
                   <MessageCircle className="w-5 h-5" />
